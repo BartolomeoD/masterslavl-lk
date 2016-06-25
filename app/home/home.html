@@ -1,0 +1,64 @@
+<link rel="stylesheet" href="styles/mainpage.css">
+<div class="col-xs-5 leftblock">
+    <div>
+        <div class="innerblock">
+            <h3><b>{{user.firstname}} {{user.secondname}} {{user.thirdname}}</b></h3>
+            <h4>{{user.birthdate}} г. <small>{{user.age}}</small></h4>
+        </div>
+        <div class="innerblock">
+            <h3><b>Вид на жительство</b></h3>
+            <h4>В очке диаса бесплатно без смс</h4>
+        </div>
+        <div class="innerblock">
+            <h3><b>Баланс: </b>{{user.money}} талантов</h3>
+            <h4>({{user.cash}} наличными | {{user.money-user.cash}} на карте)</h4>
+        </div>
+    </div>
+</div>
+<div class="col-xs-4 rightblock">
+    <div>
+        <div id="slides_control">
+            <div>
+                <carousel interval="myInterval">
+                    <slide ng-repeat="slide in slides" active="slide.active">
+                        <div>
+                            <div class="hol-name"><h2><small>{{slide.name}}</small></h2></div>
+                            <div class="hol-desc">{{slide.desc}}</div>
+                        </div>
+                    </slide>
+                </carousel>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xs-9">
+    <ul class="nav nav-tabs">
+        <li ng-click="change(0)" class="{{tabs[0].condition}}"><a>Ценные бумаги</a></li>
+        <li ng-click="change(1)" class="{{tabs[1].condition}}"><a>Последние достижения</a></li>
+    </ul>
+    <div class="tab-content">
+        <div id="1" class="tab-pane fade in {{tabs[0].condition}}">
+            <h4>Ценные бумаги: срочные</h4>
+            <div class="col-xs-4" ng-repeat="onep in papers.express">
+                <div class="paper">
+                    <h3>Наличные</h3>
+                    <p>{{onep.cash}} талантов</p>
+                    <h3>Сальдо за сегодня</h3>
+                    <p>+{{onep.saldo}} талантов</p>
+                </div>
+            </div>
+            <h4>Ценные бумаги: остальные</h4>
+            <div class="col-xs-4" ng-repeat="onep in papers.other">
+                <div class="paper">
+                    <h3>Наличные</h3>
+                    <p>{{onep.cash}} талантов</p>
+                    <h3>Сальдо за сегодня</h3>
+                    <p>+{{onep.saldo}} талантов</p>
+                </div>
+            </div>
+        </div>
+        <div id="2" class="tab-pane fade in {{tabs[1].condition}}">
+            <h4>Здесь должны быть ваши достижения, но пока вы ничего не добились в этой жизни.</h4>
+        </div>
+    </div>
+</div>

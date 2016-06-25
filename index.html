@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <title>Личный кабинет</title>
+
+    <link rel="stylesheet" href="components/bootstrap.min.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,600' rel='stylesheet' type='text/css'>
+
+    <script src="components/angular.min.js"></script>
+    <script src="components/angular-route.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
+
+    <script src="app/app.js"></script>
+    <script src="app/home/home.js"></script>
+    <script src="app/connections/connections.js"></script>
+    <script src="app/achievements/achievements.js"></script>
+    <script src="app/finances/finances.js"></script>
+	<script src="app/buy/buy.js"></script>
 </head>
-<body>
-	<div>normas</div>
-	<div>vse zaebis</div>
+
+<body ng-app="MS" ng-controller="MainCtrl">
+    <div class="col-md-2" id="sidebar-wrapper">
+        <div id="logo">
+            <img src="images/logo.png" alt="Мастерславль">
+        </div>
+        <div id="user">
+            <div id="useravatar">
+                 <img src="images/avatar.png" alt="Ваша аватарка должна быть здесь">
+            </div>
+            <div id="username">
+                <h3>Кристина</h3>
+                <h3>Гримми</h3>
+            </div>
+        </div>
+		
+        <nav>
+            <ul>
+                <li><a href="#">Моя страница</a></li>
+                <li id="badgeline"><a href="#/app/achievements">Мои достижения</a>
+                    <div class="badge">{{newach}}</div>
+                </li>
+                <li><a href="#/app/finances">Мои финансы</a></li>
+                <li><a href="#">События города</a></li>
+                <li><a href="#/app/connections">Связанные люди</a></li>
+                <li><a href="#/app/buy">Купить билеты</a></li>
+                <li><a href="#">Мои заказы</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="content-wrapper" class="col-md-offset-2 col-md-10">
+        <ng-view></ng-view>
+    </div>
 </body>
+
 </html>

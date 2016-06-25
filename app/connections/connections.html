@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="styles/connections.css">
+<div>
+    <h1>Связанные люди</h1></div>
+<div class="col-xs-4" ng-repeat='child in connections' ng-click="gotopage(child)">
+    <div>
+        <div class="col-xs-3 userava">
+            <img src="images/kek.png" width="100%" alt="">
+        </div>
+        <div class="col-xs-9">
+            <h3>{{child.name}}</h3>
+            <h3><small>18 лет</small></h3>
+        </div>
+    </div>
+</div>

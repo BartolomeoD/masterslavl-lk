@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="styles/achievements.css">
+<h1>Мои достижения</h1>
+<div id="achs">
+    <div class="col-xs-10 oneach" ng-repeat='ach in achievements'>
+        <div class="visibleach" ng-click="showdesc(ach.id)">
+            <div class="col-xs-4">
+                <div class="col-xs-3">
+                    <img src="images/kek.png" alt="">
+                </div>
+                <div class="col-xs-9">
+                    <h4>Станция</h4>
+                    <h4>{{ach.station}}</h4>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="col-xs-12">
+                    <h4>{{ach.name}}</h4>
+                </div>
+            </div>
+            <div class="col-xs-2">
+                <div class="col-xs-12">
+                    <h2>+{{ach.gained}}</h2>
+                    <h2><small>талантов</small></h2>
+                </div>
+            </div>
+            <div class="col-xs-2 rank">
+                <div class="col-xs-4">
+                    <img src="images/rank.png" width="30px" height="36px" alt="">
+                </div>
+                <div class="col-xs-8">
+                    <h4>{{ach.rank}}</h4>
+                </div>
+            </div>
+        </div>
+        <div class="description" ng-show="ach.showdesc">
+            <p>much aenean, need swag. very swag! want sit! wow, very swag! need design, much aenean, plz mattis, yes master
+                doge. plz word! much doge, want word. very adipiscing. many text! want ipsum. many text! txt me, wow! oh
+                my full. wow, plz word! such full. such text, rate me. plz mattis, want sit! want word. many text! much ipsum!
+                want sit! plz word! such lorem! wow, wow, so layout! want word. much doge, i can haz layout. very swag. such
+                design! very doge! oh my full. so doge! many elit. wow, plz mattis, such consectetur. wow, oh my full. i
+                iz cute?, oh my full. want word. so doge! i iz cute?! wow! much doge, txt me, wow! such text, so dolor. want
+                sit! go layout! so dolor. plz mattis, want ipsum. such full. such design! so doge! wow, such full. such consectetur.
+                go layout! plz ipsum. much design! i can haz layout. wow! want sit! wow! many elit. go word! much ipsum!
+                i iz cute?! want sit! txt me. wow, go word! wow! very text! such full. need design, very text! much aenean,
+                much doge, oh my full. many amet, much lorem, need design, so dolor. oh my full, wow, so doge! plz mattis,
+                so doge! oh my lorem. go layout! i can haz layout. wow. very swag. such lorem! much ipsum! so layout! oh
+                my lorem. wow! much aenean, i iz cute?, go layout! much ipsum! oh my full. wow, much lorem, very text! wow.</p>
+        </div>
+    </div>
+</div>

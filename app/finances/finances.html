@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="styles/finances.css">
+<div class="col-xs-11">
+    <div>
+        <h2>Мои финансы</h2></div>
+    <div id="finances">
+        <div>
+            <h2><small>Ценные бумаги: срочные</small></h2></div>
+        <div>
+            <div class="col-xs-3" ng-repeat="paper in finances.express">
+                <div>
+                    <ul>
+                        <li>
+                            <h3><small>Наличные</small></h3></li>
+                        <li>
+                            <h3>{{paper.cash}} талантов</h3></li>
+                        <li>
+                            <h3><small>Сальдо за сегодня</small></h3></li>
+                        <li>
+                            <h3>+{{paper.saldo}} талантов</h3></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="shares">
+        <div>
+            <h2><small>Акции</small></h2></div>
+        <div>
+            <div class="col-xs-3" ng-repeat="paper in finances.others">
+                <div>
+                    <ul>
+                        <li>
+                            <h3><small>Доход</small></h3></li>
+                        <li>
+                            <h3>{{paper.cash}} талантов</h3></li>
+                        <li>
+                            <h3><small>Дата окончания</small></h3></li>
+                        <li>
+                            <h3>{{paper.date}}</h3></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>История операций</h2>
+    </div>
+    <br>
+    <div id="history">
+        <div class="col-xs-11" ng-repeat="transaction in history">
+            <div class="col-xs-1"><img src="images/history.png" alt=""></div>
+            <div class="col-xs-3">{{transaction.date}}</div>
+            <div class="col-xs-3">Станция "{{transaction.station}}"</div>
+            <div class="col-xs-3">{{transaction.rank}}</div>
+            <div class="col-xs-2">-{{transaction.spend}} талантов</div>
+        </div>
+    </div>
+</div>

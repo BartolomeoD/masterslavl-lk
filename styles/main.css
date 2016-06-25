@@ -1,0 +1,78 @@
+body {
+    font-family: 'Open Sans', sans-serif !important;
+    background-color: #f2f2f2;
+}
+#sidebar-wrapper {
+    text-align: left;
+    font-size: 20px;
+    position: fixed;
+    height: 100%;
+    background-color: #363c43;
+}
+#sidebar-wrapper > img {
+    display: block;
+    margin:20px auto 0 auto;
+}
+#logo img {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#user {
+    text-align: center;
+}
+#useravatar {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#user img {
+    height: 100%;
+}
+#username {
+    text-align: left;
+    padding-left: 50px;
+}
+nav {
+    padding-left: 50px;
+}
+#username {
+    margin-top: 30px;
+    color: #cacdd1;
+    margin-bottom: 30px; 
+}
+#username h3 {
+    margin-top: 15px;
+}
+#content-wrapper {
+    margin-top: 20px;
+}
+nav ul {
+    line-height: 40px;
+    list-style: none;
+    padding: 0;
+}
+nav li a {
+    outline: none !important;
+    text-decoration: none !important;
+    color: #717982;
+}
+a:hover, a:active {
+    color: white !important;
+}
+a:visited {
+    color: #717982;
+}
+#badgeline {
+    position: relative;
+}
+.badge {
+    padding: 3px 6px;
+    background-color: red;
+    position: absolute;
+    left: 75%;
+    top: -5%;
+}

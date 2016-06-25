@@ -1,0 +1,51 @@
+#shares .col-xs-3, #finances .col-xs-3 {
+    margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 200px;
+}
+.col-xs-3 > div {
+    width: 380px;
+    height: 180px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+#shares h3, #finances h3 {
+    margin: 12px;
+}
+.col-xs-3 ul {
+    padding-left: 20px;
+    list-style: none;
+}
+h2 {
+    margin-left: 15px;
+}
+#shares .col-xs-3 > div{
+    border: 2px solid #b18d46;
+}
+#history > .col-xs-11 {
+    padding-left: 0px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    height: 80px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #d8d8d8; 
+}
+.col-xs-11 img {
+    margin: 0px;
+}
+#history {
+    height: 100%;
+}
+#shares h3 small {
+    color: #b9a06e;
+}
+.col-xs-1 {
+    padding: 0;
+}
+#history .col-xs-2, #history .col-xs-3 {
+    text-align: center;
+    padding-top: 25px;
+    font-size: 20px;
+}
