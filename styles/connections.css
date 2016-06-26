@@ -1,14 +1,21 @@
-.col-xs-4 {
+.connections {
     height: 100px;
     margin-bottom: 30px;
 }
-.col-xs-4 > div {
+.connections > div {
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 0 0 10px #e8e8e8;
-    width: 400px;
     height: 100%;
     background-color: white;
+}
+.connections h3{
+	font-size:18px;
+	margin:0px;
+}
+.connectName{
+	padding-top:15px;
+	padding-left:20px;
 }
 .userava {
     text-align: center;    
@@ -17,9 +24,6 @@
 .userava img {
     height: 70px;
     width: auto;
-}
-h3 {
-    margin: 0px;
 }
 .col-xs-4 .col-xs-9 {
     padding-top: 25px;
