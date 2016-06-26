@@ -9,7 +9,7 @@
     font-family: GhotamPro; /* Имя шрифта */
     src: url(../fonts/GOTHAMPROBOLD.TTF); /* Путь к файлу со шрифтом */
 	font-weight: bold;
-	font-style: normal;
+	font-style: normal; 
 	
 }
 
@@ -204,7 +204,15 @@ a:visited {
 	}
 }
 .sidebar_menu_open {
-  display: block !important;
-  position: fixed;
-  z-index: 10;
+	display: block !important;
+  	position: fixed;
+ 	z-index: 10;
 }
+.navbar-inverse {
+	background-color: #363c43;
+	border-color: #363c43;
+}
+/* ТЫ УВЕРЕН ЧТО У ТЕБЯ У ШРИФТОВ FONT-FAMILY ДОЛЖЕН БЫТЬ ОДИНАКОВЫМ? */
+/* МНЕ КАЖЕТСЯ ХУЙНЯ ТО ЧТО ВЫ СКАЧИВАЕТЕ КАЖДЫЙ РАЗ ЕБУЧИЙ БУТСТРАП.МИН ,
+   ЛУЧШЕ ФУЛЛОЧКУ СКАЧАТЬ И ПОЧИСТИТЬ ЕЕ ОТ НЕНУЖНО И ТАМ ТОЛЬКО 
+   РЕДАКТИРОВАТЬ СТИЛИ*/
