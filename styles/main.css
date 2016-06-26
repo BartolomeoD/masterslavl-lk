@@ -159,6 +159,8 @@ a:visited {
   }
   #sidebar {
     padding-top:0;
+    display: none;
+    padding-left: 0;
   }
   .navbar-toggle{
 	
@@ -172,30 +174,7 @@ a:visited {
 	}
 	.container{
 		width:100%;
-		}
-	
-}
-@media (max-width: 758px){
-	.row-offcanvas-right
-  .sidebar-offcanvas {
-    right: -58.3%;
-  }
-
-  .row-offcanvas-left
-  .sidebar-offcanvas {
-    left: -58.3%;
-  }
-  .row-offcanvas-right.active {
-    right: 58.3%;
-  }
-  .row-offcanvas-left.active {
-    left: 58.3%;
-  }
-  .sidebar-offcanvas {
-    position: absolute;
-    top: 0;
-    width: 58.3%;
-  }
+	}
 }
 @media (max-width: 400px){
 	nav li a {
@@ -222,4 +201,9 @@ a:visited {
 	#sidebar-wrapper {
 	padding-left:10px;
 	}
+}
+.sidebar_menu_open {
+  display: block !important;
+  position: fixed;
+  z-index: 10;
 }
