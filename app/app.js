@@ -1,10 +1,14 @@
 angular.module('MS', [
     'ngRoute',
     'MS.home',
+	'MS.achievements',
     'MS.connections',
-    'MS.achievements',
     'MS.finances',
-	'MS.buy'
+	'MS.buy',
+	'MS.orders', 
+	'ngAnimate',
+	'plunker',
+	'MS.events'
 	
 ])
 .config(function($routeProvider) {

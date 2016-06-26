@@ -1,0 +1,129 @@
+﻿.ticket{
+	max-height:450px;
+	margin:20px;
+	background:#ffffff;	
+	border-radius: 3px;
+	border: 1px solid #e8e8e8;
+	padding-bottom:30px;
+	padding-top:18px;
+	padding-left:20px;
+	padding-right:20px;
+	color:#6a6a6a;
+}
+.animate> input:first-of-type{
+	margin-top:0px;
+}
+.numTicket  {
+	margin-bottom:30px;
+	height:25px;
+}
+.numTicket > div  {
+	display:inline-block;
+}
+.numTicket > div:first-of-type{
+	float:left;
+}
+.numTicket > div:last-of-type{
+	float:right;
+}
+.numTicket img{
+	margin-left:5px;
+}
+input{
+	height:37px;
+	width:100%;
+	margin: 5px 0 5px 0;
+	border-radius: 8px;
+	border: 1px solid #e8e8e8;
+	padding-left:15px;
+	padding-right:15px;
+}
+.ticket > div{
+	text-align:center;
+}
+.unChangeTicket{
+	content:'Свернуть';
+}
+.changeTicket{
+	content:'Заполнить билет';
+}
+.animate{
+	overflow:hidden;
+	transition: all linear 0.5s;
+	height: 340px;
+}
+.ng-hide {
+    height: 0;
+}
+.save{
+	font-size:11px;
+	height:35px;
+	width:90%;
+	background-color:#ff0000;
+	border-radius:8px;
+	margin: 10px auto 10px auto;
+	line-height:35px;
+	color:white;
+	font-weight:bold;
+}
+.chained{
+	margin-top:10px;
+	margin-bottom:20px;
+	color:#00a2ff !important;
+	text-decoration:underline;
+}
+.chained>a[href]{
+	color:#00a2ff;
+}
+.top{
+	display:inline-block;
+}
+.top > div{
+	margin:0px;
+	padding:0px;
+}
+.pdf{	
+	border: 1px solid #004db5;
+	border-radius:5px;
+	color:#004db5;
+	text-align:center;
+}
+.mail{	
+	border: 1px solid #b53700;
+	border-radius:5px;
+	color:#b53700;
+	text-align:center;
+}
+.type{
+	margin-top:20px;
+	padding-left:0px;
+}
+.type > .ticket:first-of-type{
+	margin-left:0px;
+}
+.typeTicket{
+	font-size:18px;
+	font-weight:bold;
+	margin: 0px 0px 5px 0px;
+}
+.turnBtn{
+	font-size:13px;
+	color:#848484;
+}
+.turnBtn>i{
+	margin-left:10px;
+	color:#191919;
+}
+.sendOrder img{
+
+	margin-right:10px;
+}
+.sendOrder > div{
+	float:right;
+	margin-left:20px;
+	font-size:12px;
+	height:30px;
+	display:inline-block;
+	width:150px;
+	line-height:30px;
+}

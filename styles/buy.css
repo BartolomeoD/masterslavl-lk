@@ -1,16 +1,14 @@
-body {
-    font-family: 'Open Sans', sans-serif !important;
-    background-color: #f2f2f2;
-}
+
 .firstblock{
-    box-shadow: 0px 0px 2px 1px #ececec;
-    border-radius: 5px;
+    box-shadow: 1px 1px 4px 3px #ececec;
+    border-radius: 8px;
     background: white;
 }
-.secondblock{
-    padding-top:20px;
+
+.otherBlock:first-of-type{
+    margin-top:10px;
 }
-.secondblock > div{	
+.otherBlock{	
     box-shadow: 0px 0px 2px 1px #ececec;
     border-radius: 5px;
     background: white;
@@ -65,7 +63,7 @@ body {
 	display:inline-block;
 }
 .firstblock > div {
-    height: 450px;
+    height: 400px;
 }
 .change{
 	display: inline-block;
@@ -75,12 +73,17 @@ body {
 	text-align:center;
 	border-radius:20px;
 	height:40px;
+	font-size:16px;
+	line-height:40px;
 	
 }
 .choosen{
 	cursor: pointer;
 	background:#ff0000;
 	color:#ffffff;
+}
+.chooseTicket{
+	margin-top:20px;
 }
 .unchoosen{
 	cursor: pointer;	
@@ -100,6 +103,9 @@ font-size: 22px;
 }
 .calendar{
 	padding:15px;
+}
+.calendar > div{
+	margin: 10px 0px 10px 0px;
 }
 .thirdblock{
 	font-size:22px;
@@ -218,4 +224,84 @@ input:checked + .slider:before  {
 padding-right:10px;
 vertical-align:middle;
 display:inline-block;
+}
+/* календарь*/
+
+.day{
+	display:inline-block;
+	width:calc(100% / 7);	
+	text-align:center;
+}
+.choosenDate{
+	color:#ffeeee;
+	background:#ff0000;
+	border-radius:100%;
+	height:auto;
+}
+.panelCtrl{
+	height:30px;
+}
+.panelCtrl > div{
+	display: inline-block;
+}
+.left, .right{
+	cursor:pointer;
+	width:10px;
+}
+i{	
+	cursor:pointer;
+}
+.months{
+	margin: 0px 5px 0px 5px;
+	width:calc(100% - 30px);
+}
+.months > div{
+	width:calc((100% - 9px) / 3);
+	display:inline-block;
+}
+.months1{
+	cursor:pointer;
+	text-align:left;
+}
+.months2{
+	text-align:center;	
+}
+.months3{	
+	cursor:pointer;
+	text-align: right;
+}
+.right{
+	float:right;
+}
+.left{
+	float:left;
+}
+.week>div{
+	display:inline-block;
+}
+.dates{
+	height:100px;
+}
+.oneDay{
+	cursor:pointer;
+	line-height:28px;
+	text-align:center;
+	width:28px;
+	height:28px;
+	margin-right:calc(((100% - (7 * 28px)) / 7) / 2);
+	margin-left:calc(((100% - (7 * 28px)) / 7) / 2);
+	margin-top: 5px;
+}
+.holiday{
+	border-bottom:1px solid red;
+	border-bottom-width: 1px;
+}
+h6{
+	font-size:26px;
+	font-weight:bold;
+	margin-top: 0px !important;
+}
+.hideDate{
+	height:0px;
+	cursor: none;
 }

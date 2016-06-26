@@ -1,5 +1,25 @@
+@font-face {
+    font-family: GhotamPro; /* Имя шрифта */
+    src: url(../fonts/GOTHAMPROREGULAR.TTF); /* Путь к файлу со шрифтом */
+	font-weight: regular;
+	font-style: normal;
+	
+}
+@font-face {
+    font-family: GhotamPro; /* Имя шрифта */
+    src: url(../fonts/GOTHAMPROBOLD.TTF); /* Путь к файлу со шрифтом */
+	font-weight: bold;
+	font-style: normal;
+	
+}
+
+.head{
+	font-size:24px;
+	font-weight:bold;
+	margin-bottom:20px;
+}
 body {
-    font-family: 'Open Sans', sans-serif !important;
+    font-family: GhotamPro;
     background-color: #f2f2f2;
 }
 #sidebar-wrapper {
@@ -14,7 +34,9 @@ body {
     margin:20px auto 0 auto;
 }
 #logo img {
-    width: 100%;
+	margin-left:calc((100% - 143px)/2);
+	
+    width: 143px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -34,15 +56,18 @@ body {
 }
 #username {
     text-align: left;
-    padding-left: 50px;
+    padding-left: 10%;
+	font-size:18px !important;
+	color:#bac8d7;
+    margin-top: 30px;
+    margin-bottom: 30px; 
 }
 nav {
-    padding-left: 50px;
+	
+    padding-left: 10%;
 }
-#username {
-    margin-top: 30px;
-    color: #cacdd1;
-    margin-bottom: 30px; 
+#username >h3{
+    font-size:19px !important;
 }
 #username h3 {
     margin-top: 15px;
@@ -59,6 +84,7 @@ nav li a {
     outline: none !important;
     text-decoration: none !important;
     color: #717982;
+	font-size:18px;
 }
 a:hover, a:active {
     color: white !important;

@@ -1,12 +1,38 @@
 <link rel="stylesheet" href="styles/buy.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script> 
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-<h1>Покупка билетов</h1>
 
-<div id="buy">
-	<div class="col-xs-9 firstblock">
-		<div class="col-xs-6 calendar">
-		<h4>1.Выбирете дату посещения</h4>
-			календарь
+
+
+<div id="buy col-xs-9">
+	<div class="col-xs-9 head">Покупка билетов</div>
+
+	<div class="col-xs-9 ">
+		<div class="firstblock col-xs-12">
+		<div class="col-xs-6 calendar" ng-controller="calCtrl">	
+			<h4>1.Выберете дату посещения</h4>		
+				<div>{{date.toLocaleStrin("ru",options)}}</div>	
+				<div class="panelCtrl">
+					<div class="left" ng-click="prvs()"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+					<div class="months">
+						<div class="months1" ng-click="prvs()">{{viewMonth(month-1)}}</div>
+						<div class="months2">{{viewMonth(month)}}</div>
+						<div class="months3" ng-click="next()">{{viewMonth(month+1)}}</div>	
+					</div>
+					<div class="right" ng-click="next()"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+					
+					
+					
+				</div>
+				<div class="dayOfWeek">
+					<div class="day" ng-repeat="day in week">{{day}}</div>
+				</div>
+				<div class="dates">
+					<div class="week " ng-repeat="week in table"><div class="oneDay" ng-repeat="day in week  track by $index" ng-click="setDateCal(day)" 
+					ng-class="{choosenDate: day.getDate()==date.getDate(), unchoosenDate: day.getDate()!=date.getDate(),  holiday: holidaysFunc(day),hideDate: hideDate(day)}" 
+					> {{table[$parent.$index][$index].getDate()}}</div></div>
+				</div>
 		</div>
 		<div class="col-xs-6 listChange">
 			<h4>2.Выберете смену</h4>
@@ -16,11 +42,15 @@
 				</div>
 			</div>
 		</div>
+		</div>
+		
 	</div>
-	<div class="col-xs-9 secondblock">
 	
+		<div class="chooseTicket col-xs-9">
 		<h4>3.Выберете билеты</h4>
-		<div class="col-xs-12 dop">
+		</div>
+		<div class="col-xs-9 ">
+			<div class="col-xs-12 dop otherBlock">
 			<div class="col-xs-3"><div>Питание</div>
 				<div>
 				<!-- Rounded switch -->
@@ -60,7 +90,7 @@
 			<div class="col-xs-3">				
 			</div>
 		</div>
-		<div class="col-xs-12">
+		<div class="col-xs-12 otherBlock">
 			<div class="col-xs-2 typeTicket">3-4 года</div>
 			<div class="col-xs-4">Могут посещать Мастерславль только с родителями</div>
 			<div class="col-xs-3 price"><div>{{change[myChoose]['price']}}</div></div>
@@ -72,7 +102,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-xs-12">
+		<div class="col-xs-12 otherBlock">
 			<div class="col-xs-2 typeTicket">5-6 лет</div>
 			<div class="col-xs-4">Могут посещать Мастерславль только с родителями</div>
 			<div class="col-xs-3 price"><div>{{change[myChoose]['price']}}</div></div>
@@ -84,7 +114,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-xs-12">
+		<div class="col-xs-12 otherBlock">
 			<div class="col-xs-2 typeTicket">7-14 лет</div>
 			<div class="col-xs-4">Могут посещать Мастерславль только с родителями</div>
 			<div class="col-xs-3 price"><div>{{change[myChoose]['price']}}</div></div>
@@ -96,7 +126,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-xs-12">
+		<div class="col-xs-12 otherBlock">
 			<div class="col-xs-2 typeTicket">Сопр</div>
 			<div class="col-xs-4">Могут посещать Мастерславль только с родителями</div>
 			<div class="col-xs-3 price"><div>{{change[myChoose]['price']}}</div></div>
@@ -108,7 +138,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-xs-12">
+		<div class="col-xs-12 otherBlock">
 			<div class="col-xs-2 typeTicket">Гость</div>
 			<div class="col-xs-4">Могут посещать Мастерславль только с родителями</div>
 			<div class="col-xs-3 price"><div>{{change[myChoose]['price']}}</div></div>
@@ -120,15 +150,13 @@
 				</div>
 			</div>
 		</div>
-		
+		</div>
 	</div>
 	<div class="col-xs-6 thirdblock">
 		<div class="col-xs-6">
-		Итого: {{total}}
+			Итого: {{total}}
 		</div>
 		<div class="col-xs-6 btnNext">
-		Далее
+			Далее
 		</div>
 	</div>
-	
-</div>

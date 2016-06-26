@@ -1,3 +1,13 @@
+@font-face {
+    font-family: GhotamPro; /* Имя шрифта */
+    src: url(../fonts/GOTHAMPROREGULAR.TTF); /* Путь к файлу со шрифтом */
+	font-weight: normal;
+	font-style: normal;
+	
+}
+.gray{
+	color:#747474;
+}
 #slides_control > div{
   height: 100%;
 }
@@ -7,11 +17,12 @@
 }
 body {
     background-color: #f2f2f2;
+	font-family:GhotamPro;
 }
 .hol-name {
     padding-top: 15px;
     height: 80px;
-    background-color: yellow;
+    background-color: #ffd800;
     text-align: center;
 }
 .hol-name h2 {
@@ -22,12 +33,25 @@ body {
     padding: 30px;
 }
 .leftblock {
-    height: 300px;
+    height: 240px;
 }
 .innerblock {
-    height: 100px;
-    padding: 20px;
-    padding-left: 40px;
+    height: 70px;
+    padding: 10px 20px 0px 30px;
+}
+.inner-block {
+	
+	margin-top:5px;
+    padding: 0px 20px 0px 30px;
+	line-height:40px;
+}
+.status{
+	margin-top:10px;
+    padding: 0px 20px 0px 30px;
+	
+}
+.innerblock:first-of-type{	
+	background:#fffcd7;
 }
 .innerblock h3 {
     padding: 0;
@@ -35,13 +59,18 @@ body {
     font-size: 25px;
 }
 .rightblock {
-    height: 300px;
+    height: 240px;
 }
 .leftblock > div, .rightblock > div {
     box-shadow: 0px 0px 2px 1px #ececec;
     border-radius: 5px;
     background: white;
-    height: 300px;
+    height: 240px;
+}
+.leftblock a{
+	color:#000000;
+	text-decoration: underline;
+	font-style: italic;
 }
 .tab-content {
     box-shadow: 2px 2px 1px 1px #ececec;
@@ -88,11 +117,75 @@ body {
     margin-left: 30px;
 }
 .carousel-control.left, .carousel-control.right {
+	display: none;
     background-image: none;
 }
 .carousel-control {
     cursor: pointer;
 }
+.carousel li{
+	background:#d9d9d9;
+	border-color:#d9d9d9;
+	margin:3px;
+}
+.carousel-indicators .active{
+	width:10px;
+	height:10px;
+	background:#999999;
+	border-color:#999999;
+	margin:3px;	
+}
+.carousel-indicators{
+	bottom:60px;
+}
 .tab-content h4 {
     margin-left: 30px;
+}
+.name{
+	margin-bottom:0px;
+	font-size:18px;
+}
+.age{
+	font-size:14px;
+}
+small{
+	color:#8a8a8a;
+}
+.workshops{
+	background: white;
+}
+.workshop{
+	height:85px;
+	border: 1px solid #e8e8e8;
+	border-radius:3px;
+	margin-bottom:35px;
+	margin-top:35px;
+	border-radius:3px;
+	padding:0px;
+}
+.descWork>div:first-of-type{
+	margin-top:15px;
+}
+.descWork>div:last-of-type{
+	margin-top:10px;
+}
+.favorite{
+	text-align:center;
+	margin-top:15px;
+}
+.favorite img{
+	margin: 0px 10px 0px 10px;
+}
+.workImg{
+	height:65px;
+	width:65px;
+	margin:-20px 10px 10px 10px;
+	border-radius:85px;
+	background:#e8e8e8;
+}
+
+.descWork{
+	height:100%;
+	display:inline-block;
+	
 }

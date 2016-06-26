@@ -1,5 +1,7 @@
+
 angular.module('MS.buy', [
-    'ngRoute'
+    'ngRoute',
+	'plunker'
 ])
     .config(function ($routeProvider) {
         $routeProvider.when('/app/buy', {
@@ -142,5 +144,7 @@ angular.module('MS.buy', [
 
     return '';
   }
+  
 	
     });
+

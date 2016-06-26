@@ -1,0 +1,22 @@
+.day{
+	display:inline-block;
+	width:15px;
+}
+.choosen{
+	background:red;
+}
+.panel{
+	display: inline-block;
+	height:30px;
+}
+.panel > div{
+	display: inline-block;
+	width:30px;
+}
+.week>div{
+	display:inline-block;
+	width:calc(100% / 7);
+}
+.dates{
+	height:100px;
+}

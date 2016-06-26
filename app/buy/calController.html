@@ -1,0 +1,26 @@
+<!doctype html>
+<html ng-app="plunker" >
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
+  <script src="appCal.js"></script>
+</head>
+<body ng-controller="calCtrl">
+  
+<div class="calendar col-xs-6">
+	<div class="day" ng-repeat="day in week">{{day}}</div>
+	<div>{{date.toLocaleStrin("ru",options)}}</div>	
+	<div class="panel col-xs-12">
+		<div class="col-xs-4" ng-click="prvs()">{{months[month-1]}}</div>
+		<div class="col-xs-4">{{months[month]}}</div>
+		<div class="col-xs-4" ng-click="next()">{{months[month+1]}}</div>
+	</div>	
+	<div class="dates">
+		<div class="week col-xs-12" ng-repeat="week in table "><div class="oneDay" ng-repeat="day in table[$index] " ng-click="setDateCal(j)" 
+		ng-class="{choosen: day.getDate()==date.getDate(), unchoosen: day.getDate()!=date.getDate(), holiday: holidaysFunc(day)}"> {{day.getDate()}}</div></div>
+	</div>
+</div>
+</body>
+</html>

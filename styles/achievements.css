@@ -1,6 +1,5 @@
-#achs .col-xs-10 .visibleach {
+ .col-xs-10 .visibleach {
     cursor: pointer;
-    margin-left: 15px;
     height: 100px;
     border-radius: 6px;
     box-shadow: 0 0 10px #e8e8e8;
@@ -43,10 +42,6 @@
 }
 .col-xs-2 > .col-xs-4 > img {
     margin-top: 10px;
-}
-h1 {
-    margin-left: 30px;
-    margin-bottom: 40px;
 }
 .description {
     position: relative;

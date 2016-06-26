@@ -1,0 +1,29 @@
+.item{
+	background:#ffffff;
+	margin-bottom:18px;
+	border-radius:8px;
+	height:165px;
+	box-shadow: inset 0px 0px 1px 1px #dcdcdc;
+}
+.description{
+	padding:20px;
+}
+.date{
+	margin-top:50px;
+	text-align:center;
+}
+
+.number{
+	font-size:26px;
+	font-weight:bold;
+	margin-bottom:5px;
+}
+.helper {
+	display: table;
+	vertical-align:middle;
+	height:200px;
+	border: 1px solid red;
+}
+.image > img{
+	
+}
