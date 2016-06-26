@@ -75,6 +75,7 @@ nav {
 }
 #content-wrapper {
     margin-top: 0px;
+	min-height: 900px;
 }
 nav ul {
     line-height: 40px;
@@ -117,6 +118,11 @@ a:visited {
 
 /* collapsed sidebar styles */
 @media screen and (max-width: 992px) {
+	
+	#sidebar-wrapper{
+		position:relative;
+		height:100%;
+	}
 	body {
   padding-top: 51px;  
 }
@@ -162,5 +168,29 @@ a:visited {
 	.navbar-header{
 		float:right;
 	}
+	.container{
+		width:100%;
+		}
 	
+}@media (max-width: 758px){
+	.row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -41.6%;
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -41.6%;
+  }
+  .row-offcanvas-right.active {
+    right: 41.6%;
+  }
+  .row-offcanvas-left.active {
+    left: 41.6%;
+  }
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 41.6%;
+  }
 }
