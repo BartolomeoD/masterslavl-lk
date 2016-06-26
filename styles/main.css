@@ -73,7 +73,7 @@ nav {
     margin-top: 15px;
 }
 #content-wrapper {
-    margin-top: 20px;
+    margin-top: 0px;
 }
 nav ul {
     line-height: 40px;
@@ -101,4 +101,54 @@ a:visited {
     position: absolute;
     left: 75%;
     top: -5%;
+}
+
+#sidebar {
+  height: 100%;
+  padding-right: 0;
+}
+#sidebar .nav {
+  width: 95%;
+}
+.navbar{
+	display:none;
+}
+
+/* collapsed sidebar styles */
+@media screen and (max-width: 992px) {
+	body {
+  padding-top: 51px;  
+}
+	.navbar{
+		display:block;
+	}
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -41.6%;
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -41.6%;
+  }
+  .row-offcanvas-right.active {
+    right: 41.6%;
+  }
+  .row-offcanvas-left.active {
+    left: 41.6%;
+  }
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 41.6%;
+  }
+  #sidebar {
+    padding-top:0;
+  }
 }
