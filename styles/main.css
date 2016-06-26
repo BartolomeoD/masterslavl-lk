@@ -172,7 +172,8 @@ a:visited {
 		width:100%;
 		}
 	
-}@media (max-width: 758px){
+}
+@media (max-width: 758px){
 	.row-offcanvas-right
   .sidebar-offcanvas {
     right: -41.6%;
@@ -193,4 +194,27 @@ a:visited {
     top: 0;
     width: 41.6%;
   }
+}
+@media (max-width: 550px){
+	nav li a {
+	font-size:14px;
+	}
+	#username >h3{
+    font-size:15px !important;
+	}
+	#useravatar {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+	}
+	#logo img {
+	margin-left:calc((100% - 100px)/2);
+	
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+	}
 }

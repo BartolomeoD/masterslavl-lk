@@ -29,11 +29,11 @@ body {
     margin: 0px;
 }
 .hol-desc {
-    height: 220px;
-    padding: 30px;
+    min-height: 160px;
+    padding: 10px;
 }
 .leftblock {
-    height: 240px;
+    min-height: 240px;
 }
 .innerblock {
     height: 70px;
@@ -59,13 +59,13 @@ body {
     font-size: 25px;
 }
 .rightblock {
-    height: 240px;
+	min-height: 240px;
 }
 .leftblock > div, .rightblock > div {
     box-shadow: 0px 0px 2px 1px #ececec;
     border-radius: 5px;
     background: white;
-    height: 240px;
+	min-height: 240px;
 }
 .leftblock a{
 	color:#000000;
@@ -201,5 +201,9 @@ small{
 @media (max-width: 758px){
 	.favorite img{
 		width:15%;
+	}
+	.cont{
+		padding-left:5px;
+		padding-right:5px;
 	}
 }

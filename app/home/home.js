@@ -6,7 +6,7 @@ angular.module('MS.home', ['ngRoute', 'ui.bootstrap'])
         })
     })
     .controller('HomeCtrl', function ($scope) {
-        $scope.myInterval = 3000;
+        $scope.myInterval = 100000;
         $scope.user = {
             avasrc: 'images/avatar.png',
             firstname: 'Кристина',
