@@ -1,38 +1,50 @@
- .col-xs-10 .visibleach {
+ .visibleach {
     cursor: pointer;
-    height: 100px;
+    height: 80px;
     border-radius: 6px;
     box-shadow: 0 0 10px #e8e8e8;
     background-color: white;
     text-align: center;
+	font-size:16px;
+	padding-top:10px;
 }
-.col-xs-3 img {
-    height: 80px;
+.visibleach > div{
+	height:60px;
+}
+.visibleach h4{
+	font-size:16px;
+}
+.imgStation img {
+    height: 60px;
+}
+.imgStation{
+	padding-left:0px;
+}
+.achAction{
+	padding:0px;
+}
+.achAction > div{
+	padding:0px 5px 0px 5px;
 }
 .col-xs-4, .col-xs-10 > .col-xs-2 {
     text-align: left;
     padding-top: 10px;
 }
-.col-xs-9, .col-xs-4 > .col-xs-12, .col-xs-2 > .col-xs-12 {
-    padding-top: 5px;
-    padding-left: 50px;
-    height: 80px;
+.achStation, .achAction, .achTalent {
+    padding-left: 0px;
+    height: 60px;
     border-right: 2px solid #e8e8e8;
 }
+.achTalent{
+	padding-right:0px;
+}
+
 .col-xs-2 > .col-xs-12 {
     margin-top: 10px;
     color: red;
     text-align: center;
     padding-left: 0px;
     margin-left: -20px;
-}
-.col-xs-2 > .col-xs-8, .col-xs-2 > .col-xs-4 {
-    padding-top: 10px;
-    color: red;
-    text-align: left;
-}
-.col-xs-2 > .col-xs-4 {
-    margin-left: -30px;
 }
 .col-xs-12 h2, .col-xs-8 h4 {
     margin: 0;
@@ -55,6 +67,36 @@
 .oneach {
     margin-bottom: 30px;
 }
-.rank {
-    margin-top: 10px;
+.rankImg{
+	padding:0px;
+	height:60px;
+	line-height:60px;
+}
+.rank{
+	color:#ba1111;
+}
+@media screen and (max-width: 992px) {
+	.visibleach>div{
+		height:70px;
+		padding:0px;
+	}
+	.achAction, .achStation{	
+	 margin-left:auto;
+	 margin-right:auto;
+	}
+	.visibleach{
+		height:90px;
+	}	
+}
+@media (max-width: 758px){
+	.visibleach{
+		height:200px;
+		margin:0px 0px 10px 0px;
+	}
+	.visibleach>div{
+		margin:10px 0px 10px 0px;
+	}
+	.achAction{
+		border:0px;
+	}
 }
