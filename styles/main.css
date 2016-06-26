@@ -28,6 +28,7 @@ body {
     position: fixed;
     height: 100%;
     background-color: #363c43;
+	
 }
 #sidebar-wrapper > img {
     display: block;
@@ -120,7 +121,7 @@ a:visited {
   padding-top: 51px;  
 }
 	.navbar{
-		display:block;
+		display:inline;
 	}
   .row-offcanvas {
     position: relative;
@@ -130,25 +131,36 @@ a:visited {
   }
   .row-offcanvas-right
   .sidebar-offcanvas {
-    right: -41.6%;
+    right: -33.3%;
   }
 
   .row-offcanvas-left
   .sidebar-offcanvas {
-    left: -41.6%;
+    left: -33.3%;
   }
   .row-offcanvas-right.active {
-    right: 41.6%;
+    right: 33.3%;
   }
   .row-offcanvas-left.active {
-    left: 41.6%;
+    left: 33.3%;
   }
   .sidebar-offcanvas {
     position: absolute;
     top: 0;
-    width: 41.6%;
+    width: 33.3%;
   }
   #sidebar {
     padding-top:0;
   }
+  .navbar-toggle{
+	
+		display:inline;
+		float:right;
+  }
+}
+@media (min-width: 768px){
+	.navbar-header{
+		float:right;
+	}
+	
 }
