@@ -23,8 +23,10 @@
 .achAction{
 	padding:0px;
 }
+
 .achAction > div{
 	padding:0px 5px 0px 5px;
+	margin-top:-5px;
 }
 .col-xs-4, .col-xs-10 > .col-xs-2 {
     text-align: left;
@@ -36,6 +38,7 @@
     border-right: 2px solid #e8e8e8;
 }
 .achTalent{
+	color:red;
 	padding-right:0px;
 }
 
@@ -58,9 +61,7 @@
 .description {
     position: relative;
     z-index: -1;
-    margin-top: -6px;
     padding: 20px;
-    margin-left: 15px;
     background-color: #ffeeee;
     color: #756060;
 }
@@ -75,6 +76,9 @@
 .rank{
 	color:#ba1111;
 }
+.rank>div:last-of-type{
+	margin-top:-5px;
+}
 @media screen and (max-width: 992px) {
 	.visibleach>div{
 		height:70px;
@@ -84,11 +88,16 @@
 	 margin-left:auto;
 	 margin-right:auto;
 	}
+	.achAction>div{
+		margin:0px;
+	}
 	.visibleach{
 		height:90px;
 	}	
 }
 @media (max-width: 758px){
+		@-ms-viewport { width: 758px; }
+		@viewport { width: 758px; }
 	.visibleach{
 		height:200px;
 		margin:0px 0px 10px 0px;
