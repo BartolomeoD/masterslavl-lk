@@ -1,15 +1,20 @@
 <link rel="stylesheet" href="styles/orders.css">
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-<div class="col-md-11 top">
-	<div class="col-md-3 head">Заказ #1</div>
-	<div class="col-md-6 sendOrder">
-		<div class="mail"><img src="images/send2.png" alt="Отправить на почту">Отправить</div>
-		<div class="pdf"><img src="images/pdf2.png" width="17" height="17" alt="Открыть в pdf">Открыть в pdf</div>
-	</div>
+<div class="col-md-12 col-lg-11 ">
+<div class="col-md-12 col-lg-11 top">
+	<div class="col-md-5 head">Заказ #1</div>
+		<div class="col-md-7">
+			<div class="col-md-12 sendOrder">
+				<div class="mail"><img src="images/send2.png" alt="Отправить на почту">Отправить</div>
+				<div class="pdf"><img src="images/pdf2.png" width="17" height="17" alt="Открыть в pdf">Открыть в pdf</div>
+			</div>
+		</div>
+</div>
 <div id="orders">
-    <div class="col-xs-11 type" ng-repeat='typetickets in load_tickets'  ng-init="outerIndex=$index">
-		<p class="typeTicket">{{typetickets.type}}</p>
-		<div class="ticket col-xs-3"  ng-repeat='ticket in typetickets.tickets' ng-init="innerIndex=$index" ng-switch on="ticket.show">
+    <div class="col-md-12 col-lg-11 type" ng-repeat='typetickets in load_tickets'  ng-init="outerIndex=$index">
+		<div class="col-md-12"><p class="typeTicket">{{typetickets.type}}</p></div>
+		<div class="col-md-4  col-xs-3"  ng-repeat='ticket in typetickets.tickets' ng-init="innerIndex=$index" ng-switch on="ticket.show">
+			<div class="ticket col-md-12 ticket ">
 			<div class="numTicket">
 				<div>Билет #{{ticket.id}}</div>
 				<div>
@@ -28,6 +33,7 @@
 			</div>
 			<div class="turnBtn" ng-click="showdesc(innerIndex,outerIndex)" ng-switch-when="true">Заполнить билет <i class="fa fa-angle-down fa-lg" aria-hidden="true"></i></div>
 			<div class="turnBtn" ng-click="showdesc(innerIndex,outerIndex)" ng-switch-when="false">Свернуть  <i class="fa fa-angle-up fa-lg" aria-hidden="true"></i></div>
+		</div>
 		</div>
         
     </div>

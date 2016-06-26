@@ -1,6 +1,6 @@
 ﻿.ticket{
 	max-height:450px;
-	margin:20px;
+	margin:20px 0px 20px 0px;
 	background:#ffffff;	
 	border-radius: 3px;
 	border: 1px solid #e8e8e8;
@@ -79,7 +79,7 @@ input{
 	display:inline-block;
 }
 .top > div{
-	margin:0px;
+	margin:15px 0px 0px 0px;
 	padding:0px;
 }
 .pdf{	
