@@ -177,7 +177,7 @@ a:visited {
 		width:100%;
 	}
 }
-@media handheld and (max-width: 1000px){
+@media (max-width: 1000px){
 	#sidebar-wrapper{
 	position:relative;
 	height:100%;
