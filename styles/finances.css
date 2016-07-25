@@ -12,17 +12,18 @@ h2 {
 #shares .col-xs-3 > div{
     border: 2px solid #b18d46;
 }
-#history > .col-xs-11 {
+.itemOfHistory {
     padding-left: 0px;
-    margin-left: 15px;
+    margin-left: 0px;
     margin-bottom: 20px;
-    height: 80px;
+    height: 54px;
     background-color: white;
     border-radius: 5px;
     border: 1px solid #d8d8d8; 
 }
-.col-xs-11 img {
+.itemOfHistory  img {
     margin: 0px;
+	margin-top:-1px;
 }
 #history {
     height: 100%;
@@ -33,26 +34,48 @@ h2 {
 .col-xs-1 {
     padding: 0;
 }
-#history .col-xs-2, #history .col-xs-3 {
+.itemOfHistory {
+	overflow:hidden;
+	transition: all linear 0.5s;
+    font-size: 14px;
+}
+.textOfHistory{
     text-align: center;
-    padding-top: 25px;
-    font-size: 20px;
+}
+
+.itemOfHistory > .textOfHistory{
+    padding-top:5px;
+}
+.itemOfHistory > .textOfHistory:last-of-type{
+    padding-top:15px;
+    font-size: 16px;
+}
+.itemOfHistory > .dateOfHistory{
+    padding-top:15px;
+	text-align:center;
 }
 .card{
+	margin-right:200px;
 	width:255px;
 	height:135px;
 	background:#363c43;
 	border-radius:3px;
 	color:#6a7480;
 }
+.card > div:first-of-type{
+	margin-top:10px;
+	
+}
+
 .card p{
 	color:white;
+	font-size:16px;
 }
 .securities{
 	padding:0px;
 }
 .paper{
-	height:130px;
+	height:135px;
 	border: 1px solid black;
 	border-radius:3px;
 	margin-right:15px;
@@ -67,19 +90,92 @@ h2 {
 	padding-left:0px;
 }
 .paper>div, .share>div{
-	margin-top:15px;
+	margin-top:14px;
 }
 .paper h3, .share h3{
 	margin-top:0px;
-	font-size:16px;
+	margin-bottom:8px;
+	font-size:15px;
 }
 .paper  small, .share small{
 	margin-top:0px;
-	font-size:14px;
+	font-size:13px;
 }
 .cash{
 	margin-top:35px;
 	font-size:18px;
 	color:#363c43;
 	margin-bottom:10px;
+	padding:0px;
+}
+.cash > div {
+	
+	display: inline-block;
+}
+.history{
+	padding:0px;
+}
+.cardOp{
+	color:#345376;
+	font-size:16px;
+	padding-top:20px;
+}
+.cashOp{
+	color:#377634;
+}
+.charityOp{
+	color:#503476;
+}
+.securitiesOp{
+	color:#727634;
+}
+.cardOn{
+	-webkit-transition: .4s;
+  transition: .4s;
+	cursor:default !important;
+	text-decoration:none !important;
+	background:#345376;
+	color:white !important;
+}
+.cashOn{
+	cursor:default !important;
+	text-decoration:none !important;
+	background:#377634;
+	color:white !important;
+}
+.charityOn{
+	cursor:default !important;
+	text-decoration:none !important;
+	background:#503476;
+	color:white !important;
+}
+.securitiesOn{
+	cursor:default !important;
+	text-decoration:none !important;
+	background:#727634;
+	color:white !important;
+}
+.cash > div{
+	float:right;
+}
+.cash > div> div{
+	-webkit-transition: .4s;
+    transition: .4s;
+	color:#363c43;
+	text-decoration:underline;
+	display:inline-block;
+	height:25px;
+	font-size:14px;
+	padding:0px 10px 0px 10px;
+	border-radius:12px;
+	line-height:25px;
+	cursor:pointer;
+	margin:0px 5px 0px 5px;
+}
+i{
+	cursor:pointer;
+}
+
+.ng-hide {
+    height: 0px;
 }

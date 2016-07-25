@@ -41,6 +41,7 @@
 }
 
 .countPlus{
+	float:right;
 	cursor: pointer;
 	text-align:center;
 	margin-right:0px !important;
@@ -50,15 +51,19 @@
 	border-style:solid;
 	line-height: 23px;
 }
+.countDigits{
+	text-align:center;
+	width: calc(100% - 70px);
+}
 .count>div{
 	vertical-align:middle;
+	
 	float:right;
 	width:125px;
 }
 .count>div>div{
 	vertical-align: middle;
 	height: 30px;
-	margin-right:15px;
 	font-size:22px;
 	display:inline-block;
 }
