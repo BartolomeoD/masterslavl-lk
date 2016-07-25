@@ -30,3 +30,6 @@
 .description img{
 	float:left;
 }
+.item{
+	cursor:pointer;
+}
