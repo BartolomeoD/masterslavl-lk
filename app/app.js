@@ -8,8 +8,9 @@ angular.module('MS', [
 	'MS.orders', 
 	'ngAnimate',
 	'plunker',
-	'MS.events'
-	
+	'MS.events',
+    'MS.conchild',
+	'MS.event'
 ])
 .config(function($routeProvider) {
     $routeProvider.otherwise({redirectTo: '/app/home'})

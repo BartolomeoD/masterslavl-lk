@@ -1,11 +1,12 @@
 <link rel="stylesheet" href="styles/finances.css">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 <div class="col-md-12 head">Мои финансы</div>
 <div class="col-xs-12">
 	
     <div id="finances">
 		<div class="col-md-3 card">
-			<div class="col-md-12"><small>карта</small><p>1800 Талантов</p></div>
-			<div class="col-md-12">процент на остаток</div>
+			<div class="col-md-12"><small>Карта</small><p>1800 Талантов</p></div>
+			<div class="col-md-12"><small>Процент на остаток (в день)</small><p>1.2%</p></div>
 		</div>
 		<div class="col-md-12 col-lg-10 securities">
 			<div class="cash"><font>Ценные бумаги: срочные</font></div>
@@ -50,19 +51,32 @@
             </div>
         </div>
     </div>
-	<div class="col-md-12">
-    <div>
-        <h2>История операций</h2>
-    </div>
-    <br>
-    <div id="history">
-        <div class="col-xs-11" ng-repeat="transaction in history">
-            <div class="col-xs-1"><img src="images/history.png" alt=""></div>
-            <div class="col-xs-3">{{transaction.date}}</div>
-            <div class="col-xs-3">Станция "{{transaction.station}}"</div>
-            <div class="col-xs-3">{{transaction.rank}}</div>
-            <div class="col-xs-2">-{{transaction.spend}} талантов</div>
-        </div>
-    </div>
+	<div class="col-md-12 col-lg-10 history">
+		<div class="cash col-md-12 col-lg-10">
+			История операций
+			<div>
+			<div class="cardSwitch" ng-class="{cardOn: showCard}" ng-click="showCard=!showCard">
+			По карте <i class="fa fa-times" ng-show="showCard" aria-hidden="true"></i>
+			</div>
+			<div class="cashSwitch" ng-class="{cashOn: showCash}" ng-click="showCash=!showCash">
+			Наличными  <i class="fa fa-times" ng-show="showCash" aria-hidden="true"></i>
+			</div>
+			<div class="securitiesSwitch" ng-class="{securitiesOn: showSecurities}" ng-click="showSecurities=!showSecurities">
+			Ценные бумаги  <i class="fa fa-times" ng-show="showSecurities" aria-hidden="true"></i>
+			</div>
+			<div class="charitySwitch" ng-class="{charityOn: showCharity}" ng-click="showCharity=!showCharity">
+			Благотворительность  <i class="fa fa-times" ng-show="showCharity" aria-hidden="true"></i>
+			</div>
+			</div>
+		</div>
+		<div id="history">
+			<div class="col-md-12 col-lg-10 itemOfHistory" ng-show="showType(transaction.type)" ng-repeat="transaction in history">
+				<div class="col-xs-1"><img src="{{transaction.image}}" alt=""></div>
+				<div class="col-xs-2 dateOfHistory">{{transaction.date}}</div>
+				<div class="col-xs-3 textOfHistory">Станция "{{transaction.station}}"</div>
+				<div class="col-xs-3 textOfHistory">{{transaction.rank}}</div>
+				<div class="col-xs-3 textOfHistory {{transaction.type}}">-{{transaction.spend}} талантов</div>
+			</div>
+		</div>
 	</div>
 </div>

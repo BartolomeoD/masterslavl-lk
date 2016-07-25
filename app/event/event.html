@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="styles/event.css">
+<div class="col-xs-12 head">События города</div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-9">
+	<div class="col-xs-12 item">
+		<div class="col-xs-1 item-date">
+			<div class="date">
+				<p class="number">{{event.date.getDate()}}</p> 
+				<p class="month">{{viewMonth(event.date.getMonth())}}</p>
+			</div>
+		<div class="help"></div>
+		</div>
+		<div class="col-xs-12 description"><img src="{{event.image}}" alt="Событие"></img>{{event.description}}</div>
+	</div>
+	
+</div>

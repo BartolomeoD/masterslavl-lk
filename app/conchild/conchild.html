@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="styles/mainpage.css">
+<div class="col-xs-12 col-sm-6 col-lg-5 col-md-6 leftblock cont">
+    <div>
+        <div class="innerblock">
+            <p class="name">{{user.firstname}} {{user.secondname}} {{user.thirdname}}</p>
+            <p class="age">{{user.birthdate}} г. <small>{{user.age}}</small></p>
+        </div>
+        <div class="inner-block">
+            <b>Ранг:</b> <a>Заслуженный мастер III категории</a>
+        </div>
+		<div class="status">
+			<div>
+				<b>Статус: </b><font class="gray">Постоянный житель (3 пос.)</font>
+			</div>
+			<div>
+				<a>(Как стать гражданином Мастерславля?)</a>
+			</div>
+        </div>
+        <div class="inner-block">
+            <b>Баланс: </b><font class="gray italic">{{user.money}} талантов</font>
+        </div>
+    </div>
+</div>
+<div class="col-xs-12  col-sm-6 col-lg-4 col-md-6 rightblock cont">
+    <div>
+        <div id="slides_control">
+            <div>
+                <carousel interval="myInterval">
+                    <slide ng-repeat="slide in slides" active="slide.active">
+                        <div>
+                            <div class="hol-name"><h2><small>{{slide.name}}</small></h2></div>
+                            <div class="hol-desc">{{slide.desc}}</div>
+                        </div>
+                    </slide>
+                </carousel>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xs-12 col-md-12 col-lg-9 cont">
+<div class="col-xs-12 workshops">
+		<div class="favorite"><img src="images/arrow1.png"><b>Любимые мастерские</b><img src="images/arrow2.png"></div>
+	
+   <div class="col-xs-12">
+	<div class="col-xs-12 col-sm-6 col-md-4">
+		<div class="workshop">
+			<img src="images/station.png" class="workImg"></img>
+			<div class="descWork"><div>Автоцентр</div><div>712 посещений</div></div>
+			
+		</div>
+	</div>
+	<div class="col-xs-12 col-sm-6 col-md-4">
+		<div class="workshop">
+			<img src="images/station.png" class="workImg"></img>
+			<div class="descWork"><div>Автоцентр</div><div>712 посещений</div></div>
+			
+		</div>
+	</div><div class="col-xs-12  col-sm-6 col-md-4">
+		<div class="workshop">
+			<img src="images/station.png" class="workImg"></img>
+			<div class="descWork"><div>Автоцентр</div><div>712 посещений</div></div>
+			
+		</div>
+	</div>
+   </div>
+ </div>
+</div>
