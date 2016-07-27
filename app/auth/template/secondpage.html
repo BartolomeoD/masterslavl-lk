@@ -1,0 +1,25 @@
+
+			<div class="control">
+				<div class="first-block">
+					<div class="point">
+						1.{{Hello}}  Поднисите QR код с Вашего билета к камере
+					</div>
+					<div class="qr">
+						<qr-scanner class="img-thumbnail" width="256" height="256" ng-success="onSuccess(data)" ng-error="onError(error)" />
+					</div>
+				</div>
+				<div class="bottom-control">
+					<div class="button button-next" ng-click="gotopage(2)">
+						<div class="button-text">
+							Продолжить
+						</div>
+						<div class="button-icon">
+						 <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="reg">
+					<a href="#/">Вернуться к авторизации</a>
+					</div>
+				</div>
+			</div>
+		

@@ -1,0 +1,24 @@
+			<div class="control">
+				<div class="first-block">
+				<div class="cont-img">
+					<img src="images/logo4.png">
+				</div>
+					<p>{{Hello}}Номер телефона</p>
+					<input type="text"  ng-model="phonenumber" ui-mask="+7 (999) 999-99-99"  ui-mask-placeholder ui-mask-placeholder-char="_">
+					<p>Пароль</p>
+					<input type="password"  ng-model="password"  placeholder="******">
+				</div>
+				<div class="bottom-control">
+					<div class="button" ng-click="auth()">
+						<div class="button-text">
+							Войти
+						</div>
+						<div class="button-icon">
+						 <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="reg">
+					<a href="#/1">Зарегистрироваться</a>
+					</div>
+				</div>
+			</div>

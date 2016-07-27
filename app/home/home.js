@@ -6,6 +6,11 @@ angular.module('MS.home', ['ngRoute', 'ui.bootstrap'])
         })
     })
     .controller('HomeCtrl', function ($scope, $http, $sce, $document) {
+	$scope.display = function(){
+		if($cookies.get("auth")){
+			return {'display':'block'}	
+		}
+	}
         $document[0].onscroll = function() {
             if ($document[0].documentElement.scrollTop + $document[0].documentElement.clientHeight >= $document[0].documentElement.scrollHeight) {
                 $scope.getVkposts();
