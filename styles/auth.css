@@ -1,0 +1,148 @@
+#view{
+	height:200px;
+	margin: 100px auto;
+	display:block;
+	width:380px;	
+	height:500px;
+	background:#363c43;
+	padding-top:55px;
+}
+.cont-img img{
+	display:block;
+	margin: 0 auto 25px auto;
+}
+@font-face {
+	font-family: "GothamProRegular";
+	src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+	src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"),
+	url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "GothamProLight";
+	src: url("../fonts/GothamProLight/GothamProLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "GothamProMedium";
+	src: url("../fonts/GothamProMedium/GothamProMedium.eot");
+	src: url("../fonts/GothamProMedium/GothamProMedium.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/GothamProMedium/GothamProMedium.woff") format("woff"),
+	url("../fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "GothamProBold";
+	src: url("../fonts/GothamProBold/GothamProBold.eot");
+	src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/GothamProBold/GothamProBold.woff") format("woff"),
+	url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "GothamProBlack";
+	src: url("../fonts/GothamProBlack/GothamProBlack.eot");
+	src: url("../fonts/GothamProBlack/GothamProBlack.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/GothamProBlack/GothamProBlack.woff") format("woff"),
+	url("../fonts/GothamProBlack/GothamProBlack.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+.control{
+	display:block;
+	margin: 0 auto;
+	width:280px;
+	text-align:center;
+	height:100%;
+}
+.bottom-control{
+	margin-bottom:40px;
+	
+}
+.first-block{
+	height:365px;
+}
+input{
+	width:238px;
+	height:48px;
+	background:#4a5056;
+	border:solid 1px #5a6169;
+	padding:0px 20px 0px 20px;
+	color:white;
+	font-size:16px;
+	font-family: GothamProLight;
+}
+p{
+	color:#8b95a0;
+	margin-bottom:5px;
+	text-align:left;
+}
+body{
+	background-image:url("../images/background.png");
+	font-family: GothamProLight;
+	display:none;
+}
+.button{
+	width:280px;
+	height:56px;
+	background:#cc0000;
+	color:white;
+}
+.button-text, .button-icon{
+	display:inline-block;
+	text-align:center;
+	line-height:56px;
+}
+.button-icon{
+	background:#990000;
+	width:42px;
+	height:100%;
+}
+.button-text{
+	height:100%;
+	width:233px;
+}
+a:visited{
+	text-decoration:none;
+}
+a{
+	color:#a1c4e6;
+	margin-top:20px;
+	font-size:14px;
+}
+.reg{
+	padding-top:20px;
+}
+.qr{
+	height:195px;
+	width:280px;
+}
+.qr img{
+	display:block;
+	margin:0 auto;
+}
+.point{
+	display:block;
+	margin: 0 auto;
+	width:230px;
+	color:white;
+	font-family: GothamProLight;
+	margin-bottom:20px;
+}
+.point2{
+	display:block;
+	margin: 0 auto 40px auto;
+	width:230px;
+	color:white;
+	font-family: GothamProLight;
+	margin-bottom:40px;
+}

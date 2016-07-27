@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta content="width=1000" name="viewport">
+	<meta charset="UTF-8">
+	<title>Личный кабинет</title>
+
+	<link rel="stylesheet" href="components/bootstrap.min.css">
+
+	<link rel="stylesheet" href="styles/main.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,600' rel='stylesheet' type='text/css'>
+	<script src="components/angular.min.js"></script>
+	<script src="components/angular-route.min.js"></script>
+
+	<script src="components/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-i18n/1.5.7/angular-locale_ru-ru.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-cookies.js"></script>
+	<script src="app/app.js"></script>
+	<script src="app/home/home.js"></script>
+	<script src="app/connections/connections.js"></script>
+	<script src="app/achievements/achievements.js"></script>
+	<script src="app/finances/finances.js"></script>
+	<script src="app/buy/buy.js"></script>
+	<script src="app/orders/orders.js"></script>
+	<script src="app/buy/appCal.js"></script>
+	<script src="app/events/events.js"></script>
+	<script src="app/event/event.js"></script>
+	<script src="app/conchild/conchild.js"></script>
+	<script src="components/mask.js"></script>
+	<script src="components/sidebar.js"></script>
+
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+</head>
+
+<body ng-app="MS" ng-controller="MainCtrl" ng-style="display()">
+	<!-- top navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+       <div class="container">
+    	<div class="navbar-header">
+           <button type="button" class="navbar-toggle" onclick="document.querySelector('#sidebar').classList.toggle('sidebar_menu_open')">
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+    	</div>
+       </div>
+    </div>
+	<div >
+        
+        <!-- sidebar -->
+		<div class="col-xs-7 col-sm-4 col-md-2 col-lg-2" id="sidebar" role="navigation">
+			<div class="col-lg-2 col-md-3 col-xs-12 col-sm-12" id="sidebar-wrapper">
+				<div id="logo">
+					<img src="images/logo3.png" alt="Мастерславль">
+				</div>
+				<div id="user">
+					<div id="useravatar">
+						 <img src="images/avatar.png" alt="Ваша аватарка должна быть здесь">
+					</div>
+					<div id="username">
+						<h3>Губдулхаметова</h3>
+						<h3>Александра</h3>
+					</div>
+				</div>
+			
+				<nav>
+					<ul>
+						<li><a href="#/app/home">Моя страница</a></li>
+						<li><a href="#/app/achievements">Мои достижения</a>
+							<div class="badge">{{newach}}</div>
+						</li>
+						<li><a href="#/app/finances">Мои финансы</a></li>
+						<li><a href="#/app/events">События города</a></li>
+						<li><a href="#/app/connections">Связанные люди</a></li>
+						<li><a href="#/app/buy">Купить билеты</a></li>
+						<li><a href="#/app/orders">Мои заказы</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div id="content-wrapper" class="col-md-offset-3 col-md-9 col-lg-offset-2 col-lg-10">
+			<ng-view></ng-view>
+		</div>
+	</div>
+</body>
+
+</html>
