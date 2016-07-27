@@ -70,7 +70,7 @@ angular.module('reg', [
 	}
 	
         $scope.onSuccess = function(data) {
-            var audio = new Audio('app/auth/qr/audio/beep.mp3');
+            var audio = new Audio('app/auth/beep.mp3');
             audio.play();           
 			console.log(data);
                     $timeout(function() {$location.path('/2')}, 300);
