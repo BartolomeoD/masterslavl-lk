@@ -18,6 +18,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-i18n/1.5.7/angular-locale_ru-ru.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-cookies.js"></script>
+	<script src="components/ng-device-detector.js"></script>
+	<script src="components/re-tree.js"></script>
 	<script src="app/app.js"></script>
 	<script src="app/home/home.js"></script>
 	<script src="app/connections/connections.js"></script>
@@ -31,13 +33,12 @@
 	<script src="app/conchild/conchild.js"></script>
 	<script src="components/mask.js"></script>
 	<script src="components/sidebar.js"></script>
-	<script src="components/device.js"></script>
-
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
 </head>
 
 <body ng-app="MS" ng-controller="MainCtrl" ng-style="display()">
+	
 	<!-- top navbar -->
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
        <div class="container">
@@ -50,11 +51,9 @@
     	</div>
        </div>
     </div>
-	<div >
-        
-        <!-- sidebar -->
-		<div class="col-xs-7 col-sm-4 col-md-2 col-lg-2" id="sidebar" role="navigation">
-			<div class="col-lg-2 col-md-3 col-xs-12 col-sm-12" id="sidebar-wrapper">
+	
+		<div class="col-xs-7 col-sm-3 col-lg-2" id="sidebar" role="navigation" ng-style="position">
+			<div class="col-sm-12" id="sidebar-wrapper">
 				<div id="logo">
 					<img src="images/logo3.png" alt="Мастерславль">
 				</div>
@@ -63,9 +62,10 @@
 						 <img src="images/avatar.png" alt="Ваша аватарка должна быть здесь">
 					</div>
 					<div id="username">
-						<h3>Губдулхаметова{{ios}}</h3>
-						<h3>Александра</h3>
+						<h3>Губдулхаметова{{Hello}}</h3>
+						<h3>Александра{{position}}</h3>
 					</div>
+					
 				</div>
 			
 				<nav>
@@ -83,6 +83,9 @@
 				</nav>
 			</div>
 		</div>
+	<div class="contain-wrapper" >
+        
+        <!-- sidebar -->
 		<div id="content-wrapper" class="col-md-offset-3 col-md-9 col-lg-offset-2 col-lg-10">
 			<ng-view></ng-view>
 		</div>

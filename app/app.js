@@ -11,13 +11,22 @@ angular.module('MS', [
 	'plunker',
 	'MS.events',
     'MS.conchild',
-	'MS.event'
+	'MS.event',
+	'ng.deviceDetector'
 ])
 .config(function($routeProvider) {
 })
-.controller('MainCtrl', function($scope, browser) {
+.controller('MainCtrl', function($scope, browser,deviceDetector) {
    $scope.Hello = "Hello, Bitch"; 
-   $scope.ios=browser();
+    var vm = this;
+    vm.data = deviceDetector;
+    vm.allData = JSON.stringify(vm.data, null, 2);
+	console.log(vm.allData);
+	$scope.Hello = vm.data.os;
+	$scope.position = {'position':'fixed'};
+	if((vm.data.os==="android") || (vm.data.os==="ios")){
+		$scope.position = {'position':'absolute','height':'100%'};
+	}
 })
 .run( function($rootScope, $location, $cookies, browser) {
     if($cookies.get("auth")){
