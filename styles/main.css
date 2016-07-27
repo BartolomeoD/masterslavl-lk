@@ -24,21 +24,17 @@ body {
 	cursor:default;
     font-family: GhotamPro;
     background-color: #f2f2f2;
-	display:inline-block;
-	height:100%;
-}
-.contain-wrapper{
-	display:inline-block;
-	height:100%;
 }
 #sidebar-wrapper {
-	display:inline-block;
 	padding-left:1%;
     text-align: left;
     font-size: 20px;
     height: 100%;
     background-color: #363c43;
 	
+}
+#sidebar{
+    position: fixed;
 }
 #sidebar-wrapper > img {
     display: block;
@@ -116,7 +112,6 @@ a:visited {
 }
 
 #sidebar {
-	display:inline-block;
   height: 100%;
   padding-right: 0;
   padding-left: 0;
