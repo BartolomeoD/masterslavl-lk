@@ -1,0 +1,326 @@
+body{
+	margin:0px;
+	font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+h2{
+	text-align:center;
+}
+.justifyright{
+	text-align:rigth;
+}
+.link{
+	float:right;
+	color: #00b4e9;
+	margin:0px;
+	margin-right:10%;
+}
+.nav-container{
+	z-index:1000;
+	opacity:1;
+	position:fixed;
+	display:flex;
+	height:80px;
+	width:100%;
+	justify-content:center;
+	background:white;
+	border-bottom: 1px solid #eee;
+}
+.nav{
+	width:100%;
+	margin: 0px 50px 0px 50px;
+	height:100%;
+}
+.nav ul{
+	float:right;
+	text-decoration: none;
+    list-style: none;
+	margin:0px;
+}
+.nav li{
+	position: relative;
+    display: inline-block;
+	text-decoration: none;
+    list-style: none;
+}
+.nav li a{	
+    position: relative;
+    display: block;
+    padding: 10px 15px;	
+    padding-bottom: 33px;
+    padding-top: 33px;
+    color: #444;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+	font-size:14px;
+}
+.logo{
+	margin-left:50px;
+}
+.logo img{
+	margin-top:10px;
+	height:60px;
+	width:auto;
+}
+.first-block{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:700px;
+	width:100%;
+	background-image:url(http://www.nadasuge.ru/system/assets/photos/000/040/524/original/f507c0e402e71.jpg?1427953577);
+	background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: cover;
+	background-attachment: fixed; 	
+	opacity:0.7;
+}
+.text-in-first-block{
+	color:white;
+	font-size:48px;
+    text-shadow: #333 0 0 2px;
+}
+.second-block{
+	width:100%;
+	display:flex;
+	justify-content:center;
+}
+.icons-container{
+	margin:60px 0px 60px 0px;
+	width:100%;
+	flex-direction: row;
+	display:flex;
+	justify-content:center;
+}
+.icons{
+	width:200px;
+	height:170px;
+	background:#f9f9f9;
+    border-radius: 6px;
+	margin:0px 30px 0px 30px;
+	border: 1px solid #eee;
+    padding: 40px 20px;
+	text-align:center;
+}
+.icon{
+	display:block;
+	margin: 0 auto;
+	height:100px;
+	width:100px;
+	background:#00b4e9;
+	border-radius: 6px;
+	color:white;
+	font-size:60px;
+}
+.desc-icon{
+	color:#444;
+	font-size:18px;
+	margin-top:30px;
+}
+.icon i{
+	margin-top:20px;
+}
+.third-block{
+	background: #f9f9f9;
+	padding-top: 60px;
+	padding-bottom: 20px;
+	width:100%;
+}
+h5{	
+    font-size: 24px;
+    font-weight: 700;
+	font-family: 'Raleway';
+    color: #333;
+	margin-top: 10px;
+    margin-bottom: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	opacity:1.0;
+}
+h6{
+	text-transform: uppercase;
+    margin: 12px 0 10px;
+    color: #444;
+    line-height: 1.4;	
+    text-align: left;
+	font-size: 18px;
+    font-weight: 400;
+	font-family: 'Raleway';
+}
+.line{
+	width: 100px;
+    height: 2px;
+    background: #00b4e9;
+    margin: 15px auto 10px;
+}
+.news-container{
+	width:100%;
+	flex-direction: row;
+	display:flex;
+	justify-content:center;
+}
+.news-block{
+	display:flex;
+	flex-direction: column;	
+	align-items:stretch;
+	justify-content:space-between;
+	width:300px;
+	margin:0px 30px 0px 30px;
+	padding:0px 20px 0px 20px;
+    border-bottom: 2px solid #00b4e9;
+    margin-bottom: 30px;
+}
+.title{
+	text-align: left;
+    font-size: 14px;
+    color: #777;
+    margin: 0;
+}
+.date{
+	text-align:right;
+	color: #00b4e9;
+}
+.ads{
+	background: #f2f9fe;
+	padding-top: 60px;
+	padding-bottom: 20px;
+	width:100%;
+}
+.photo{
+    display: block;
+    position: relative;
+	padding-top: 60px;
+	padding-bottom: 20px;
+	width:100%;
+	height:350px;	
+	overflow:hidden;
+}
+.photo:after {
+  content: "";
+  background: url('http://www.denovanw.com/file/2014/03/family_walking_in_field-2000x680.jpg');
+  opacity: 0.2;
+    background-position: 0% 80px;
+	background-size: auto calc(100% - 80px);
+	background-attachment: fixed; 	
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+.photo-container{
+	width:100%;
+	flex-direction: row;
+	display:flex;
+	justify-content:center;
+	
+}
+.photo-block{
+	margin:30px 30px 30px 30px;
+}
+.photo img{	
+    max-height: 250px;
+	border-radius:6px;
+}
+
+.ads-block{
+	width:400px;
+	min-height:100px;
+	text-transform: capitalize;
+    font-size: 16px;
+    margin: 30px 30px 30px 30px;
+    background: #fff;
+    padding: 30px 50px;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    font-style: italic;
+    color: #777;
+}
+.ads-container{
+	width:100%;
+	flex-direction: row;
+	display:flex;
+	justify-content:center;
+	
+}
+.ads-link{
+	text-align:right;
+	margin-bottom:0px;
+	color: #00b4e9;
+}
+.statement{
+	background: white;
+	padding-top: 60px;
+	padding-bottom: 20px;
+	width:100%;
+}
+
+.statement-container{
+	width:100%;
+	flex-direction: row;
+	display:flex;
+	justify-content:center;	
+}
+
+.statement-container > div{
+	margin:20px 60px 20px 60px;	
+}
+.statement-container > div >div{
+	margin-bottom:15px;	
+}
+.statement .form-input{	
+	width: 300px;
+	font-size: 13px;
+	padding: 6px 0 4px 10px;
+	border: 1px solid #cecece;
+	background: #F6F6f6;
+	border-radius: 6px;
+}
+.statement textarea{	
+	width: 300px;
+	font-size: 13px;
+	padding: 6px 0 4px 10px;
+	border: 1px solid #cecece;
+	background: #F6F6f6;
+	border-radius: 6px;
+	height:100px;
+
+}
+.statement p{
+	margin-bottom:10px;
+	color:#777;
+}
+input[type="submit"]{
+	cursor: pointer;
+    -webkit-appearance: button;
+    padding: 13px 10px;
+    box-shadow: none;
+    border: none;
+    background: #00b4e9;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 6px;
+}
+.footer{
+	padding-top:1px;
+	padding-left:100px;
+	height:160px;
+	color:#777;
+    background-color: rgb(34, 34, 34);
+}
+.footer p{
+	margin:5px;
+}
+.footer li{
+	text-decoration: none;
+    list-style: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+	font-size:14px;
+	padding:0px;	
+}
+.footer ul{
+	padding:0px;
+}
